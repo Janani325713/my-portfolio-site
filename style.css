@@ -125,7 +125,7 @@
       padding: 50px 80px;  
       list-style: none;  
 }
-.badges ul li::before{                    /*content works with pseudo element only*/
+.badges ul li::before{                    
   content: "\2726";
    padding-left:180px;
   transform: translateY(-50%);
@@ -202,23 +202,23 @@ p{
    font-size:22px;
   text-shadow: 4px 4px 4px rgba(0,0,0,0.3);
 }
-.both{              /*parent tag*/
-  position: relative;            /**/
+.both{             
+  position: relative;           
   width: 100%;
-  overflow: hidden; /*to break the blur spreading outside */
+  overflow: hidden; 
 }
-.form{                 /*child tag(image)*/
-  position: absolute;             /*by default its position will also be static but if it stay inside the parent tag it makes move the content downward to that.so here we using absoulte that makes the content stay upward to it*/
+.form{                
+  position: absolute;          
   width: 100%;
   height: 70%;
-  inset: 0;  /*top,right,bottom,left will be 0*/
+  inset: 0;  
   background-image: url(nature.jpg);
   background-position: center;
   background-size:cover;
   filter: blur(8px);
   z-index: -1; 
 }
-.detail{               /*child tag(content)-by default its position is static as it stay inside the parent tag*/
+.detail{               
   z-index: 2;
   width: 100%;
   height: 70%;
@@ -306,6 +306,7 @@ hr{
     grid-template-columns: repeat(4,1fr);
   }
 }
+
 
 
 
